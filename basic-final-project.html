@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaz (candy)</title>
+    <style>
+      .container {
+        background: linear-gradient(120deg, #79fcdb 0%, #97f385 100%);
+        border-radius: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 650px;
+        margin: 20px auto;
+        padding: 10px 25px;
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fcfdfd;
+        font-size: 44px;
+        margin: 10px auto;
+        text-align: center;
+        padding: 10px;
+        width: 300px;
+        border-bottom: 2px solid rgb(4, 240, 169);
+      }
+      h2 {
+        color: #fcfdfd;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: lighter;
+        font-family: cursive;
+        font-size: 22px;
+      }
+      img {
+        display: block;
+        margin: 20px auto 25px;
+        max-width: 98%;
+        border-radius: 10px;
+      }
+      p {
+        color: #356cbe;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 1.5;
+        padding: 0 10px;
+      }
+      button {
+        display: block;
+        margin: 5px auto 40px;
+        font-size: 28px;
+        font-weight: 600;
+        padding: 18px;
+        border-radius: 40px;
+        border: 1px solid #8cf537;
+        background-color: #fff;
+        box-shadow: 3px 8px 12px rgba(0, 0, 0, 0.2);
+        color: #8cf537;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: #8cf537;
+        opacity: 0.9;
+      }
+      .readmore {
+        font-size: 13px;
+        text-decoration: underline;
+        margin-bottom: 10px;
+        color: #356cbe;
+      }
+      .nowruz {
+        text-decoration: underline;
+        color: #356cbe;
+      }
+      .candy {
+        font-size: 30px;
+      }
+      .emoji {
+        font-size: 20px;
+      }
+      .coder {
+        text-align: center;
+        margin-bottom: 0px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gaz <span class="candy">(candy)</span></h1>
+      <h2>Persian Nougat</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/050/060/original/gaz-isfahan-recipe-1-1.jpg?1666695124"
+        alt="Gaz (candy)"
+      />
+      <hr />
+      <p>
+        <strong>Gaz </strong><em>(Persian:گز)</em> is an Iranian nougat that
+        originated in Isfahan region. It is widely known as Persian Nougat in
+        American and European countries. It is made from pistachio, almond
+        kernels, rose-water, egg whites and sap from a special plant.<br />
+        Typically gaz is accompanied by tea or sherbet and is eaten as a dessert
+        after a main course. It is also traditionally served on festive
+        occasions such as
+        <a
+          class="nowruz"
+          href="https://en.wikipedia.org/wiki/Nowruz"
+          target="_blank"
+          ><em>Nowruz</em></a
+        >, the Persian New Year.
+      </p>
+      📖
+      <a
+        class="readmore"
+        href="https://en.wikipedia.org/wiki/Gaz_(candy)"
+        target="_blank"
+        >Read on Wikipedia
+      </a>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/050/075/original/gaz-featured.jpg?1666705180"
+        alt="Pistachio Gaz"
+      />
+      <button>Try Pistachio Gaz <span class="emoji">💁‍♀️</span></button>
+      <p class="coder">Coded by Mohadeseh Moradian</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        if (name !== "" && email !== "") {
+          alert("Thanks " + name + ", we will be in touch.");
+        } else {
+          if (name !== "" && email == "") {
+            alert("Enter your email address please!");
+          } else {
+            alert("Sorry, no name, no gaz for you!");
+          }
+        }
+      }
+      let buyButton = document.querySelector("button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
